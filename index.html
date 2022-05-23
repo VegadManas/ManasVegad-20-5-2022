@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="css/bootstrap/bootstrap.css" type="text/css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: rgb(138, 43, 227);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #Form {
+            background-color: rgb(101, 214, 255);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0px 0px 43px rgb(192, 24, 164);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4" id="Form">
+                <h2><i class="fa fa-gamepad"></i> &nbsp; Player details G5
+                    <hr>
+                </h2>
+
+                <div class="form-group">
+                    <b>Games:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-gamepad"></i></span>
+                        <select class="form-control" id="DDL_Gender">
+                            <option value="*">- - Please Choose a Game - -</option>
+                            <option value="C">COD</option>
+                            <option value="v">valorant</option>
+                            <option value="g">Genshin</option>
+                            <option value="b">Bgmi</option>
+                            <option value="F">fortnite</option>
+                            <option value="a">apex</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <b>Enter Game ID:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-id-badge"></i></span>
+                        <input id="TxtFirstname" type="text" maxlength="20" placeholder="Enter firstname here.."
+                            class="form-control" />
+                    </div>
+                    <small id="TxtFirstnameValidate" class="text-danger"></small>
+                </div>
+                <hr>
+
+                <div class="form-group">
+                    <b>Enter DOB:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-id-badge"></i></span>
+                        <input type="date">
+                    </div>
+                    <small id="TxtFirstnameValidate" class="text-danger"></small>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <b>Experience in gaming:</b>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-id-badge"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="m1" name="anime"><label for="m1">Noob&nbsp;&nbsp;</label>
+                        <input type="radio" id="m2" name="anime"><label for="m1">good&nbsp;&nbsp;</label>
+                        <input type="radio" id="m3" name="anime"><label for="m1">Goat&nbsp;&nbsp;</label>
+                    </div>
+                    <small id="TxtFirstnameValidate" class="text-danger"></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
